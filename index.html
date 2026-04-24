@@ -8,16 +8,15 @@
   <link rel="stylesheet" href="styles.css" />
   <script src="index.js" defer></script>
   <script src="https://kit.fontawesome.com/51b5876e0b.js" crossorigin="anonymous"></script>
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
       emailjs.init({
         publicKey: "YOUR_PUBLIC_KEY",
       });
-   })();
-</script>
+    })();
+  </script>
 </head>
 
 <body>
@@ -46,9 +45,9 @@
       <div class="header__content">
         <h1 class="title">Hello</h1>
         <h1 class="title gold photo">I'm Julian.
-        <figure class="header__img">
-          <img src="assets/reverb.JPG" class="profile__img" alt="">
-        </figure>
+          <figure class="header__img">
+            <img src="assets/reverb.JPG" class="profile__img" alt="">
+          </figure>
         </h1>
         <p class="header__para">
           I'm a <b class="gold">Frontend Software Engineer</b> with a strong passion for building
@@ -69,9 +68,9 @@
         </div>
     </header>
     <a href="#">
-    <button class="mail__btn click" onclick="toggleModal()">
-      <i class="fa-solid fa-envelope"></i>
-    </button>
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fa-solid fa-envelope"></i>
+      </button>
     </a>
     <a href="#projects" class="scroll">
       <div class="scroll__icon click"></div>
@@ -89,54 +88,54 @@
         <div class="modal__languages">
           <figure class="modal__language">
             <img class="modal__language--img" src="./assets/html.png" alt="">
-          <span class="language__name">HTML</span>
+            <span class="language__name">HTML</span>
           </figure>
           <figure class="modal__language">
             <img class="modal__language--img" src="./assets/css.png" alt="">
-          <span class="language__name">CSS</span>
+            <span class="language__name">CSS</span>
           </figure>
           <figure class="modal__language">
             <img class="modal__language--img" src="./assets/javascript.png" alt="">
-          <span class="language__name">JavaScript</span>
+            <span class="language__name">JavaScript</span>
           </figure>
           <figure class="modal__language">
             <img class="modal__language--img" src="./assets/react.png" alt="">
-          <span class="language__name">React</span>
+            <span class="language__name">React</span>
           </figure>
         </div>
       </div>
       <div class="modal__half modal__contact">
         <i class="fa-solid fa-x modal__exit click" onclick="toggleModal()"></i>
-      <h3 class="modal__title modal__title--canta">
-        Let's have a chat
-      </h3>
-      <h3 class="modal__sub-title modal__sub-title--canta">
-        I'd love to here from you!
-      </h3>
-      <form id="contact__form" onsubmit="contact(event)">
-        <div class="form__item">
-          <label class="form__item--label">Name</label>
-          <input type="input" name="user_name" type="text" required></input>
+        <h3 class="modal__title modal__title--canta">
+          Let's have a chat
+        </h3>
+        <h3 class="modal__sub-title modal__sub-title--canta">
+          I'd love to here from you!
+        </h3>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input type="input" name="user_name" type="text" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input type="input" name="user_email" type="email" required></input>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea type="input" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">
+            Send it my way
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fa-solid fa-spinner"></i>
         </div>
-        <div class="form__item">
-          <label class="form__item--label">Email</label>
-          <input type="input" name="user_email" type="email" required></input>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! Looking forward to speaking to you soon.
         </div>
-        <div class="form__item">
-          <label class="form__item--label">Message</label>
-          <textarea type="input" name="message" type="text" required></textarea>
-        </div>
-        <button id="contact__submit" class="form__submit">
-          Send it my way
-        </button>
-      </form>
-      <div class="modal__overlay modal__overlay--loading">
-        <i class="fa-solid fa-spinner"></i>
       </div>
-      <div class="modal__overlay modal__overlay--success">
-        Thanks for the message! Looking forward to speaking to you soon.
-      </div>
-        </div>
     </div>
     <img src="./assets/nice-star.png" class="shape shape--0">
     <img src="./assets/nice-star.png" class="shape shape--1">
@@ -165,13 +164,17 @@
                   HTML, CSS, JavaScript, React, Vite
                 </h4>
                 <p class="project__description--para">
-                This is a clone project for a netflix app. This app is for streaming movies and videos and is built with React and Vite. It uses the TMDB API to fetch movie data and display it on the app. The app also has a log in functionality that allows users to create accounts and manage their profiles.
+                  This is a clone project for a netflix app. This app is for streaming movies and videos and is built
+                  with React and Vite. It uses the TMDB API to fetch movie data and display it on the app. The app also
+                  has a log in functionality that allows users to create accounts and manage their profiles.
                 </p>
                 <div class="project__description--links">
-                  <a href="https://github.com/JulianCrenshaw/netflix-clone" class="project__description--link" target="_blank">
+                  <a href="https://github.com/JulianCrenshaw/netflix-clone" class="project__description--link"
+                    target="_blank">
                     <i class="fa-brands fa-github"></i>
                   </a>
-                  <a href="https://netflix-clone-r1yy66xzg-juliancrenshaws-projects.vercel.app" class="project__description--link" target="_blank">
+                  <a href="https://netflix-clone-r1yy66xzg-juliancrenshaws-projects.vercel.app"
+                    class="project__description--link" target="_blank">
                     <i class="fa-solid fa-link"></i>
                   </a>
                 </div>
@@ -190,13 +193,17 @@
                   HTML, CSS, JavaScript
                 </h4>
                 <p class="project__description--para">
-                 This is a project for a local business that I built to help them get online. The project is built with HTML, CSS, and JavaScript and is a static website that showcases the business's products and services. The website also has a contact form that allows customers to get in touch with the business.
+                  This is a project for a local business that I built to help them get online. The project is built with
+                  HTML, CSS, and JavaScript and is a static website that showcases the business's products and services.
+                  The website also has a contact form that allows customers to get in touch with the business.
                 </p>
                 <div class="project__description--links">
-                  <a href="https://github.com/JulianCrenshaw/Legacy-Foundation-Creations-2" class="project__description--link" target="_blank">
+                  <a href="https://github.com/JulianCrenshaw/Legacy-Foundation-Creations-2"
+                    class="project__description--link" target="_blank">
                     <i class="fa-brands fa-github"></i>
                   </a>
-                  <a href="https://juliancrenshaw.github.io/Legacy-Foundation-Creations-2/" class="project__description--link" target="_blank">
+                  <a href="https://juliancrenshaw.github.io/Legacy-Foundation-Creations-2/"
+                    class="project__description--link" target="_blank">
                     <i class="fa-solid fa-link"></i>
                   </a>
                 </div>
@@ -215,12 +222,16 @@
                   HTML, CSS, JavaScript, React
                 </h4>
                 <p class="project__description--para">
-                  Here's a project for a library that I built throughout the course of my learning. The project is built with React and is a web application that allows users to browse and search for books in the library's collection. The app also has a feature that allows users to check out books to purchase.
+                  Here's a project for a library that I built throughout the course of my learning. The project is built
+                  with React and is a web application that allows users to browse and search for books in the library's
+                  collection. The app also has a feature that allows users to check out books to purchase.
                 <div class="project__description--links">
-                  <a href="https://github.com/JulianCrenshaw/new-books-project" class="project__description--link" target="_blank">
+                  <a href="https://github.com/JulianCrenshaw/new-books-project" class="project__description--link"
+                    target="_blank">
                     <i class="fa-brands fa-github"></i>
                   </a>
-                  <a href="https://juliancrenshaw.github.io/new-books-project/" class="project__description--link" target="_blank">
+                  <a href="https://juliancrenshaw.github.io/new-books-project/" class="project__description--link"
+                    target="_blank">
                     <i class="fa-solid fa-link"></i>
                   </a>
                 </div>
@@ -239,13 +250,17 @@
                   HTML, CSS, JavaScript, React
                 </h4>
                 <p class="project__description--para">
-                  My most recent project is for a local bakery that I built usingthe same template as the library project. The project is built with React and shows varius products that the bakery has to offer. This project is still a work in progress and I plan to add more features to it in the future.
+                  My most recent project is for a local bakery that I built usingthe same template as the library
+                  project. The project is built with React and shows varius products that the bakery has to offer. This
+                  project is still a work in progress and I plan to add more features to it in the future.
                 </p>
                 <div class="project__description--links">
-                  <a href="https://github.com/JulianCrenshaw/new-bakery" class="project__description--link" target="_blank">
+                  <a href="https://github.com/JulianCrenshaw/new-bakery" class="project__description--link"
+                    target="_blank">
                     <i class="fa-brands fa-github"></i>
                   </a>
-                  <a href="https://new-bakery-nyd7-hh0oaxoul-juliancrenshaws-projects.vercel.app/" class="project__description--link" target="_blank">
+                  <a href="https://new-bakery-nyd7-hh0oaxoul-juliancrenshaws-projects.vercel.app/"
+                    class="project__description--link" target="_blank">
                     <i class="fa-solid fa-link"></i>
                   </a>
                 </div>
